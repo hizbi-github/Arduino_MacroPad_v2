@@ -1,11 +1,103 @@
 
 
-# To Be Updated Soon!
 
-# :)
+# About
 
+<p align="center">
+  <img src="Demonstration_Images_and_Gifs\Cover_Image.jpg" />
+</p>
 
-# Revision History
+This is the second version of my previous MacroPad (https://github.com/hizbi-github/Arduino_MacroPad). 
+
+The code has been rewritten from the ground-up with new features. It now supports a rotary encoder instead of a potentiometer for 
+controlling the volume level on a PC. It also shows the volume level on 128x64 dislay. For scrolling it 
+has an analog stick. And now instead of normal buttons, there's a 4x4 matrix keypad. This macropad is reprogrammable, although there 
+is no software UI available to do so from a PC; you have do it on your own in C/C++ and upload the compiled code to the MacroPad. An 
+Arduino Pro Micro is used as a microcontroller in the MacroPad to provide the HID input to the computer.
+
+If you are confused about what even is this thing, here's a short explanation:
+
+    A macropad is essentially a small external harware device that can be programmed to input any user command. This command may be a keyboard keystroke, a mouse movement, etc. The user is able to combine several commands and map them to a single button on the macropad. This makes it easy to perform multiple 
+    PC commands with a single press of a button from the macrpad. Volume knobs and small displays are also included to further add to the user experience and increase productivity.
+
+<p align="center">
+  <img src="Demonstration_Images_and_Gifs\Comparison_Banner.png" />
+</p>
+
+# Features
+
+This MacroPad has some basic hotkeys that I programmed for my own needs. These are:
+
+### 1. Volume Control:
+
+        The rotary encoder can be used to increase/decrease the PC's volume. Pressing the encoder's button mutes the voulme.
+
+        A volume bar is also shown on the small display.
+
+<p align="center">
+  <img src="Demonstration_Images_and_Gifs\Volume_Knob.gif" />
+</p>
+
+### 2. Auto Login:
+
+        Enters your PC password for you and then presses the "Enter" key to complete the login process.
+
+<p align="center">
+  <img src="Demonstration_Images_and_Gifs\Auto_Login.gif" />
+</p>
+
+### 3. Monitor/Screen Output Switch:
+
+        This a sequence of multiple key presses to change the output to "Extend" and back to "PC screen only" as in Windows 10. This
+        
+        combo is quite useful for me since I had to manualy do this everytime I wanted to connect some other device to my monitor.
+
+<p align="center">
+  <img src="Demonstration_Images_and_Gifs\Screen_Output_Control.gif" />
+</p>
+
+### 4. Desktop Switch:
+
+        Inputs the "Win + D" combo and displays the desktop on a Windows 10 machine. Pressing it again will take you back to the
+        
+        your previuos window.
+
+<p align="center">
+  <img src="Demonstration_Images_and_Gifs\Switching_to_Desktop.gif" />
+</p>
+
+### 5. Scrolling with the Analog Stick:
+
+        Tired of scrolling with your scoll wheel? Well the analog stick in the MacroPad is able to act as a scroll wheel. It allows for 
+
+        smooth scrolling with two modes: fast and slow. Pushing the analog stick a little allows for a slower scroll, while pushing it completely
+
+        enables fast scolling so you can zoom through documents and webpages!
+
+<p align="center">
+  <img src="Demonstration_Images_and_Gifs\Scrolling_with_Analog_Stick.gif" />
+</p>
+
+Similarly, the remaining buttons on the keypad can also be programmed for automating mundane tasks. I would add more shortcuts as my need arises!
+
+# Components
+
+<p align="center">
+  <img src="Demonstration_Images_and_Gifs\Multiple_Images.png" />
+</p>
+
+1. Arduino Pro Micro (5V version)
+2. A Micro-USB to USB-A Cable
+3. KY-040 Rotary Encoder
+4. 128x64 I2C OLED Display
+5. Generic Analog Stick 
+6. 4x4 Matrix Keypad Buttons
+7. Double-Sided 8x12cm Prototype Board (acting as a motherboard for all the components) 
+8. Female Header Pin Slots
+9. Lots of Female-Female Jumper Wires
+10. A Small Box (for placing the finished macropad)
+
+# Changelog / Revision History
 
 ## Rev_1
 
@@ -69,5 +161,22 @@
 
 22. Next revision will feature the addition of Analog Stick and probably Mouse HID library. 
 
+## Rev_3
 
-==================================================================================================
+1. Added the support for the Analog Stick. 
+
+2. The Analog Stick mimicks the movement of a mouse's scroll wheel.
+
+3. There are two modes for scrolling; slow and fast.
+
+4. For slow scrolling, push the Analog Stick slightly upwards or downwards.
+
+5. Push harder on the Analog Stick to scroll quickly.
+
+6. Added new hotkeys/functions for window-switch and desktop-switch.
+
+7. Performed some code cleanup. 
+
+<p align="center">
+    ==============================================================
+</p>
