@@ -17,8 +17,11 @@ Arduino Pro Micro is used as a microcontroller in the MacroPad to provide the HI
 
 If you are confused about what even is this thing, here's a short explanation:
 
-    A macropad is essentially a small external harware device that can be programmed to input any user command. This command may be a keyboard keystroke, a mouse movement, etc. The user is able to combine several commands and map them to a single button on the macropad. This makes it easy to perform multiple 
-    PC commands with a single press of a button from the macrpad. Volume knobs and small displays are also included to further add to the user experience and increase productivity.
+    A macropad is essentially a small external harware device that can be programmed to input any user command. 
+    This command may be a keyboard keystroke, a mouse movement, etc. The user is able to combine several 
+    commands and map them to a single button on the macropad. This makes it easy to perform multiple PC 
+    commands with a single press of a button from the macrpad. Volume knobs and small displays are also included 
+    to further add to the user experience and increase productivity.
 
 <p align="center">
   <img src="Demonstration_Images_and_Gifs\Comparison_Banner.png" />
@@ -30,9 +33,8 @@ This MacroPad has some basic hotkeys that I programmed for my own needs. These a
 
 ### 1. Volume Control:
 
-        The rotary encoder can be used to increase/decrease the PC's volume. Pressing the encoder's button mutes the voulme.
-
-        A volume bar is also shown on the small display.
+        The rotary encoder can be used to increase/decrease the PC's volume. Pressing the encoder's button mutes 
+        the voulme. A volume bar is also shown on the small display.
 
 <p align="center">
   <img src="Demonstration_Images_and_Gifs\Volume_Knob.gif" />
@@ -48,9 +50,9 @@ This MacroPad has some basic hotkeys that I programmed for my own needs. These a
 
 ### 3. Monitor/Screen Output Switch:
 
-        This a sequence of multiple key presses to change the output to "Extend" and back to "PC screen only" as in Windows 10. This
-        
-        combo is quite useful for me since I had to manualy do this everytime I wanted to connect some other device to my monitor.
+        This a sequence of multiple key presses to change the output to "Extend" and back to "PC screen only" as 
+        in Windows 10. This combo is quite useful for me since I had to manualy do this everytime I wanted to 
+        connect some other device to my monitor.
 
 <p align="center">
   <img src="Demonstration_Images_and_Gifs\Screen_Output_Control.gif" />
@@ -58,9 +60,8 @@ This MacroPad has some basic hotkeys that I programmed for my own needs. These a
 
 ### 4. Desktop Switch:
 
-        Inputs the "Win + D" combo and displays the desktop on a Windows 10 machine. Pressing it again will take you back to the
-        
-        your previuos window.
+        Inputs the "Win + D" combo and displays the desktop on a Windows 10 machine. Pressing it again will take 
+        you back to the your previuos window.
 
 <p align="center">
   <img src="Demonstration_Images_and_Gifs\Switching_to_Desktop.gif" />
@@ -68,11 +69,10 @@ This MacroPad has some basic hotkeys that I programmed for my own needs. These a
 
 ### 5. Scrolling with the Analog Stick:
 
-        Tired of scrolling with your scoll wheel? Well the analog stick in the MacroPad is able to act as a scroll wheel. It allows for 
-
-        smooth scrolling with two modes: fast and slow. Pushing the analog stick a little allows for a slower scroll, while pushing it completely
-
-        enables fast scolling so you can zoom through documents and webpages!
+        Tired of scrolling with your scoll wheel? Well the analog stick in the MacroPad is able to act as a scroll 
+        wheel. It allows for smooth scrolling with two modes: fast and slow. Pushing the analog stick a little 
+        allows for a slower scroll, while pushing it completely enables fast scolling so you can zoom through 
+        documents and webpages!
 
 <p align="center">
   <img src="Demonstration_Images_and_Gifs\Scrolling_with_Analog_Stick.gif" />
@@ -103,7 +103,7 @@ Similarly, the remaining buttons on the keypad can also be programmed for automa
 
 1. Rotary Encoder works perfectly for controlling the PC volume.
 
-2. The Encoder button is used for muting the volume.
+2. The Encoder's button is used for muting the volume.
 
 3. Since only one interrupt pin is used for Rotary Encoder, its more sensitive on one direction.
 
